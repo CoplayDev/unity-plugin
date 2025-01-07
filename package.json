@@ -1,0 +1,14 @@
+{
+  "name": "com.coplaydev.coplay",
+  "displayName": "Coplay",
+  "version": "0.0.1",
+  "unity": "2021.3",
+  "description": "Copilot for game development",
+  "dependencies": {},
+  "keywords": [
+    "coplay",
+    "unity",
+    "copilot",
+    "ai"
+  ]
+}
