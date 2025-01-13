@@ -1,10 +1,12 @@
 {
   "name": "com.coplaydev.coplay",
   "displayName": "Coplay",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "unity": "2021.3",
   "description": "Copilot for game development",
-  "dependencies": {},
+  "dependencies": {
+    "com.unity.inputsystem": "1.1.1"
+  },
   "keywords": [
     "coplay",
     "unity",
