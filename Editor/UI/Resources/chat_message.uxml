@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="chat_message_container" style="flex-grow: 0; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; flex-direction: row; align-items: flex-start; justify-content: flex-start; align-self: auto; flex-shrink: 0;">
+        <ui:Label parse-escape-sequences="true" name="avatar" style="background-image: resource('logo'); width: 20px; height: 20px; -unity-text-align: upper-left; margin-right: 10px; align-self: flex-start;" />
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:TextField name="content" select-all-on-focus="false" vertical-scroller-visibility="Auto" multiline="true" select-all-on-mouse-up="false" readonly="true" style="-unity-background-image-tint-color: rgba(248, 0, 0, 0); color: rgb(171, 93, 93); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: auto; width: 100%; align-items: flex-start; max-width: 100%; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; white-space: normal; max-height: 500px; margin-left: 0; margin-top: 0; margin-right: 0;" />
+            <ui:VisualElement name="ui_message" style="flex-grow: 1;" />
+            <ui:VisualElement name="function_calls" style="flex-grow: 1; flex-shrink: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

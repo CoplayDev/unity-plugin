@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="style.uss" />
+    <ui:VisualElement name="context_item" style="flex-grow: 0; flex-direction: row; align-self: flex-start; justify-content: flex-start; align-items: center; background-color: rgba(48, 47, 47, 0.84); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; height: 20px; width: 118px; margin-right: 5px; padding-left: 5px; margin-top: 3px;">
+        <ui:Toggle label="a" value="false" toggle-on-label-click="true" style="font-size: 10px; width: 101px; height: 19px; align-items: center; color: rgb(0, 180, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

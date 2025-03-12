@@ -1,0 +1,3 @@
+We need the UI assets in a `Resources` folder such that they can be dynamically loaded in uxml files in a dll build or locally while developing.
+
+TODO: Create CI tests that will fail/flag if we're trying to add resources to the project that will not be loaded when we build to a DLL. Or when we use fixed paths to load assets instead of making them relative to our current project. The package is either installed via disk locally or installed as a dll by users into their unity project as a plugin.
