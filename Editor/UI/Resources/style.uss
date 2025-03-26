@@ -25,8 +25,7 @@
     margin: 10px;
     background-color: rgb(56, 56, 56);
     border-radius: 5px;
-    /* This controls the max-width of the AI chat message in the chat view */
-    max-width: 90%; 
+    max-width: 90%;
 }
 
 #content TextElement {
@@ -215,9 +214,9 @@
 }
 
 #context_selection {
-    background-color: rgba(47, 47, 47, 0.84);
+    background-color: rgba(0, 0, 0, 0);
     width: 118px;
-    border-width: 0;
+    border-width: 1px;
     padding-left: 5px;
     padding-top: 0;
     padding-bottom: 0;
@@ -258,7 +257,7 @@
 }
 
 #record:hover {
-    color: rgba(202, 26, 26, 1);
+    color: rgb(202, 26, 26);
     cursor: Link;
 }
 
@@ -272,4 +271,29 @@
 
 #style_dropdown:hover {
     background-color: rgba(0, 0, 0, 0);
+}
+
+#cancel_thinking {
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    cursor: Link;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border-width: 1;
+    position: absolute;
+    bottom: 25px;
+    justify-content: center;
+}
+
+#cancel_thinking:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cancel_thinking Label {
+    cursor: Link;
 }

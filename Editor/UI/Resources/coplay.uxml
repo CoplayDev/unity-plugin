@@ -2,31 +2,38 @@
     <Style src="style.uss" />
     <ui:VisualElement style="flex-grow: 1;">
         <ui:VisualElement name="settings_bar" style="flex-grow: 0; flex-direction: row; justify-content: space-between; align-items: center; flex-shrink: 0; min-height: 30px;">
-            <ui:VisualElement name="logo" style="flex-grow: 0; background-image: resource('logo2_back'); min-width: 40px; min-height: 20px; -unity-background-scale-mode: scale-to-fit; margin-left: 10px;" />
+            <ui:VisualElement name="logo" style="flex-grow: 0; background-image: resource(&apos;logo2_back&apos;); min-width: 40px; min-height: 20px; -unity-background-scale-mode: scale-to-fit; margin-left: 10px;" />
+            <ui:Button text="Update available" display-tooltip-when-elided="true" name="update_button" style="display: none; background-color: rgb(76, 175, 80); color: rgb(255, 255, 255); border-radius: 3px; padding: 2px 8px; margin-left: 10px; -unity-text-align: middle-center;" />
             <ui:VisualElement style="flex-direction: row; align-items: center;">
-                <ui:Button text="\uea24" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings" style="height: 28px; width: 35px; -unity-text-align: middle-center; -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900'); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgba(115, 111, 111, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); margin-top: 5px; margin-bottom: 5px; font-size: 16px; -unity-font-definition: resource('Fonts/his');" />
-                <ui:Button text="\uf2ed" parse-escape-sequences="true" display-tooltip-when-elided="true" name="clear_chat" tooltip="Clear Chat History and Functions" style="height: 28px; width: 35px; -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900'); -unity-font-definition: initial; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;" />
+                <ui:Button text="\uea24" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings" style="height: 28px; width: 35px; -unity-text-align: middle-center; -unity-font: resource(&apos;Fonts/Font Awesome 6 Free-Solid-900&apos;); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgba(115, 111, 111, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); margin-top: 5px; margin-bottom: 5px; font-size: 16px; -unity-font-definition: resource(&apos;Fonts/his&apos;);" />
+                <ui:Button text="\uf2ed" parse-escape-sequences="true" display-tooltip-when-elided="true" name="clear_chat" tooltip="Clear Chat History and Functions" style="height: 28px; width: 35px; -unity-font: resource(&apos;Fonts/Font Awesome 6 Free-Solid-900&apos;); -unity-font-definition: initial; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="settings_panel" style="flex-grow: 0; display: none; flex-shrink: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
-        <ui:ScrollView name="messages" view-data-key="l" style="height: auto; flex-grow: 1; flex-shrink: 1; min-height: 50px; background-image: resource('full_logo'); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(255, 255, 255, 0.25);">
+        <ui:ScrollView name="messages" view-data-key="l" style="height: auto; flex-grow: 1; flex-shrink: 1; min-height: 50px; background-image: resource(&apos;full_logo&apos;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(255, 255, 255, 0.25);">
             <ui:VisualElement name="chat" style="flex-grow: 0; flex-shrink: 0;" />
-            <ui:VisualElement name="thinking" style="flex-grow: 0; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; flex-shrink: 0; display: none;">
-                <ui:Label style="color: rgb(230, 230, 230);" />
+            <ui:VisualElement name="thinking" style="flex-grow: 0; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; flex-shrink: 0; display: flex; flex-direction: row; align-items: center;">
+                <ui:Label text="Coplay is thinking" name="thinking_label" style="color: rgb(230, 230, 230);" />
             </ui:VisualElement>
             <ui:VisualElement name="functions" style="flex-grow: 0; flex-shrink: 0;" />
             <ui:VisualElement name="action_records" style="flex-grow: 0; flex-shrink: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
         </ui:ScrollView>
+        <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; align-items: center;">
+            <ui:Button name="cancel_thinking">
+                <ui:Label name="icon" selectable="true" style="margin-top: 0; margin-right: 10px; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                <ui:Label text="Stop thinking" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            </ui:Button>
+        </ui:VisualElement>
         <ui:VisualElement name="pending_messages" style="flex-grow: 0; background-color: rgb(40, 40, 40); flex-shrink: 0;" />
         <ui:VisualElement name="input" style="flex-grow: 0; flex-shrink: 0;" />
         <ui:VisualElement name="selected_context" style="flex-grow: 0; flex-shrink: 0; flex-wrap: wrap; flex-direction: row; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;" />
         <ui:VisualElement name="VisualElement" style="flex-grow: 0; flex-direction: row; flex-shrink: 0;">
             <ui:VisualElement name="input_group" style="flex-grow: 1; flex-direction: row;">
-                <ui:TextField multiline="false" name="chat_input" select-word-by-double-click="false" placeholder-text="What can I help with?" style="color: rgb(255, 255, 255); width: auto; flex-grow: 1; margin-left: 4px;" />
+                <ui:TextField name="chat_input" select-word-by-double-click="false" placeholder-text="What can I help with?" style="color: rgb(255, 255, 255); width: auto; flex-grow: 1; margin-left: 4px; flex-shrink: 1;" />
                 <ui:DropdownField name="iterations" choices="1,2,3,4,5" />
-                <ui:Button text="\ue9d8" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="submit" style="-unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900'); -unity-font-definition: resource('Fonts/his'); font-size: 24px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-color: rgba(188, 188, 188, 0); margin-right: 0; margin-left: 0; padding-right: 2px; padding-left: 2px;" />
+                <ui:Button text="\ue9d8" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="submit" style="-unity-font: resource(&apos;Fonts/Font Awesome 6 Free-Solid-900&apos;); -unity-font-definition: resource(&apos;Fonts/his&apos;); font-size: 24px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-color: rgba(188, 188, 188, 0); margin-right: 0; margin-left: 0; padding-right: 2px; padding-left: 2px;" />
             </ui:VisualElement>
-            <ui:Button name="record" style="background-color: rgba(188, 188, 188, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; -unity-font-definition: resource('Fonts/Font Awesome 6 Free-Solid-900'); font-size: 16px;" />
+            <ui:Button name="record" style="background-color: rgba(188, 188, 188, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; -unity-font-definition: resource(&apos;Fonts/Font Awesome 6 Free-Solid-900&apos;); font-size: 16px;" />
         </ui:VisualElement>
         <ui:VisualElement name="VisualElement" style="flex-grow: 0; flex-direction: row; height: 24px; flex-shrink: 0; align-items: center; padding-top: 0; align-content: flex-start; justify-content: flex-start; margin-top: 10px; margin-right: 0; margin-bottom: 0; margin-left: 0;">
             <uie:ToolbarMenu name="style_dropdown" />
