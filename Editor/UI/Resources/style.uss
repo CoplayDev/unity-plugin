@@ -11,8 +11,12 @@
     border-bottom-color: rgba(255, 255, 255, 0);
 }
 
+#chat_input .unity-text-element {
+    padding: 6px 2px 6px 2px;
+}
+
 #unity-content-container {
-    height: 100%;
+    flex-grow: 1;
 }
 
 .unity-list-view__item {
