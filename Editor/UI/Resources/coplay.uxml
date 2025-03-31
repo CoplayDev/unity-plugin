@@ -37,6 +37,10 @@
         </ui:VisualElement>
         <ui:VisualElement name="VisualElement" style="flex-grow: 0; flex-direction: row; height: 24px; flex-shrink: 0; align-items: center; padding-top: 0; align-content: flex-start; justify-content: flex-start; margin-top: 10px; margin-right: 0; margin-bottom: 0; margin-left: 0;">
             <uie:ToolbarMenu name="style_dropdown" />
+            <ui:VisualElement name="auto_approve_container" style="flex-grow: 0; flex-shrink: 0; flex-direction: row; align-items: center; margin-left: 5px; display: none;">
+                <ui:Toggle name="auto_approve_toggle" value="true" tooltip="When checked, functions will be auto-approved in Agent mode" style="margin-right: 2px;" />
+                <ui:Label text="Auto-approve" display-tooltip-when-elided="true" style="-unity-font-style: normal; font-size: 12px;" />
+            </ui:VisualElement>
             <ui:VisualElement style="flex-grow: 1;" />
             <ui:DropdownField index="2" choices="System.Collections.Generic.List`1[System.String]" name="mode" style="height: 30px; margin-bottom: 2px; margin-top: 2px;" />
             <ui:DropdownField index="2" name="model" style="height: 30px; margin-bottom: 2px; margin-top: 2px;" />

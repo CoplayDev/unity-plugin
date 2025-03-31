@@ -11,8 +11,10 @@
     border-bottom-color: rgba(255, 255, 255, 0);
 }
 
-#chat_input .unity-text-element {
-    padding: 6px 2px 6px 2px;
+#chat_input TextInput {
+    -unity-text-align: middle-left;
+    margin: 0 2px 0 2px;
+    padding: 0 2px 0 4px;
 }
 
 #unity-content-container {
@@ -26,7 +28,7 @@
 
 #chat_message_container {
     padding: 10px;
-    margin: 10px;
+    margin: 5px 10px 5px 10px;
     background-color: rgb(56, 56, 56);
     border-radius: 5px;
     max-width: 90%;
@@ -149,6 +151,12 @@
     padding: 1px 1px 1px 1px;
     flex-direction: row;
     align-items: center;
+}
+
+#action_record Label {
+    flex-grow: 1;
+    flex-shrink: 1;
+    white-space: normal;
 }
 
 #login:hover {
