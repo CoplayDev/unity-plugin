@@ -273,6 +273,16 @@
     cursor: Link;
 }
 
+#clear_chat {
+    color: rgba(202, 26, 26, 0.3);
+    cursor: Link;
+}
+
+#clear_chat:hover {
+    color: rgb(202, 26, 26);
+    cursor: Link;
+}
+
 #style_dropdown {
     border-top-width: 0;
     border-right-width: 0;
