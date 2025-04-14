@@ -215,16 +215,6 @@
     background-color: rgba(0, 0, 0, 0.55);
 }
 
-#clear_chat {
-    color: rgb(94, 94, 94);
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#clear_chat:hover {
-    color: rgb(221, 221, 221);
-    cursor: Link;
-}
-
 #context_selection {
     background-color: rgba(0, 0, 0, 0);
     width: 118px;
@@ -273,13 +263,14 @@
     cursor: Link;
 }
 
-#clear_chat {
-    color: rgba(202, 26, 26, 0.3);
+#new_task {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0);
     cursor: Link;
 }
 
-#clear_chat:hover {
-    color: rgb(202, 26, 26);
+#new_task:hover {
+    color: rgb(255, 255, 255);
     cursor: Link;
 }
 
