@@ -310,3 +310,44 @@
 #cancel_thinking Label {
     cursor: Link;
 }
+
+/* Feedback toggle styling for better visibility on dark backgrounds */
+#feedback_popup .unity-toggle__input {
+    background-color: rgba(60, 60, 60, 0.5);
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(100, 100, 100, 0.5);
+    width: 16px;
+    height: 16px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#feedback_popup .unity-toggle__input:hover {
+    background-color: rgba(70, 70, 70, 0.7);
+    border-color: rgba(120, 120, 120, 0.7);
+}
+
+#feedback_popup .unity-toggle__input:checked {
+    background-color: rgba(78, 156, 234, 0.3);
+    border-color: rgb(78, 156, 234);
+}
+
+#feedback_popup .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(220, 220, 220);
+    width: 14px;
+    height: 14px;
+    margin: 1px;
+}
+
+#feedback_popup .unity-toggle__input:checked .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(120, 180, 240);
+}
+
+#feedback_popup .unity-toggle__label {
+    color: rgb(220, 220, 220);
+}
+
+#feedback_popup .unity-toggle__input:checked .unity-toggle__label {
+    color: rgb(220, 220, 220);
+}
