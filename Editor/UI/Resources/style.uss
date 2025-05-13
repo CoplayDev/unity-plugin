@@ -185,15 +185,6 @@
     color: rgb(94, 94, 94);
 }
 
-#settings {
-    color: rgb(108, 108, 108);
-}
-
-#settings:hover {
-    color: rgb(221, 221, 221);
-    cursor: Link;
-}
-
 #remove:hover {
     color: rgb(255, 255, 255);
 }
@@ -263,17 +254,6 @@
     cursor: Link;
 }
 
-#new_task {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0);
-    cursor: Link;
-}
-
-#new_task:hover {
-    color: rgb(255, 255, 255);
-    cursor: Link;
-}
-
 #style_dropdown {
     border-top-width: 0;
     border-right-width: 0;
@@ -308,5 +288,101 @@
 }
 
 #cancel_thinking Label {
+    cursor: Link;
+}
+
+/* Feedback toggle styling for better visibility on dark backgrounds */
+#feedback_popup .unity-toggle__input {
+    background-color: rgba(60, 60, 60, 0.5);
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(100, 100, 100, 0.5);
+    width: 16px;
+    height: 16px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#feedback_popup .unity-toggle__input:hover {
+    background-color: rgba(70, 70, 70, 0.7);
+    border-color: rgba(120, 120, 120, 0.7);
+}
+
+#feedback_popup .unity-toggle__input:checked {
+    background-color: rgba(78, 156, 234, 0.3);
+    border-color: rgb(78, 156, 234);
+}
+
+#feedback_popup .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(220, 220, 220);
+    width: 14px;
+    height: 14px;
+    margin: 1px;
+}
+
+#feedback_popup .unity-toggle__input:checked .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(120, 180, 240);
+}
+
+#feedback_popup .unity-toggle__label {
+    color: rgb(220, 220, 220);
+}
+
+#feedback_popup .unity-toggle__input:checked .unity-toggle__label {
+    color: rgb(220, 220, 220);
+}
+
+.toolbar {
+    height: 28px;
+    width: 35px;
+    -unity-text-align: middle-center;
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(115, 111, 111, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: Link;
+}
+
+.toolbar:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#history {
+    max-height: 200px;
+}
+
+.history_item {
+    padding: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.history_item:hover {
+    cursor: Link;
+    background-color: rgba(0, 170, 255, 0.5);
+}
+
+.current_thread {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.history_item:hover #thread_label {
+    cursor: Link;
+}
+
+.history_item:hover #thread_created_at {
     cursor: Link;
 }
