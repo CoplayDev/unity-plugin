@@ -3,12 +3,15 @@
     <ui:VisualElement style="flex-grow: 1;">
         <ui:VisualElement name="settings_bar" style="flex-grow: 0; flex-direction: row; justify-content: space-between; align-items: center; flex-shrink: 0; min-height: 30px;">
             <ui:VisualElement name="logo" style="flex-grow: 0; background-image: resource(&apos;logo2_back&apos;); min-width: 40px; min-height: 20px; -unity-background-scale-mode: scale-to-fit; margin-left: 10px;" />
+            <ui:Label display-tooltip-when-elided="true" name="thread_name" />
             <ui:Button text="Update available" display-tooltip-when-elided="true" name="update_button" style="display: none; background-color: rgb(76, 175, 80); color: rgb(255, 255, 255); border-radius: 3px; padding: 2px 8px; margin-left: 10px; -unity-text-align: middle-center;" />
             <ui:VisualElement style="flex-direction: row; align-items: center;">
-                <ui:Button text="\u002B" parse-escape-sequences="true" display-tooltip-when-elided="true" name="new_task" tooltip="New Task" style="height: 28px; width: 35px; -unity-font: resource(&apos;Fonts/Font Awesome 6 Free-Solid-900&apos;); -unity-font-definition: initial; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; font-size: 20px;" />
-                <ui:Button text="\uea24" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings" style="height: 28px; width: 35px; -unity-text-align: middle-center; -unity-font: resource(&apos;Fonts/Font Awesome 6 Free-Solid-900&apos;); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgba(115, 111, 111, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); margin-top: 5px; margin-bottom: 5px; font-size: 16px; -unity-font-definition: resource(&apos;Fonts/his&apos;);" />
+                <ui:Button text="\u002B" parse-escape-sequences="true" display-tooltip-when-elided="true" name="new_thread" tooltip="New Chat" class="toolbar" style="-unity-font-definition: initial; font-size: 20px;" />
+                <ui:Button text="\uf1da" display-tooltip-when-elided="true" name="history" class="toolbar" style="-unity-font-definition: initial;" />
+                <ui:Button text="\uf7d9" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings" class="toolbar" style="-unity-font-definition: initial;" />
             </ui:VisualElement>
         </ui:VisualElement>
+        <ui:ScrollView name="history" style="display: none;" />
         <ui:VisualElement name="settings_panel" style="flex-grow: 0; display: none; flex-shrink: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
         <ui:ScrollView name="messages" view-data-key="l" style="height: auto; flex-grow: 1; flex-shrink: 1; min-height: 50px; background-image: resource(&apos;full_logo&apos;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(255, 255, 255, 0.25);">
             <ui:VisualElement name="chat" style="flex-grow: 0; flex-shrink: 0;" />
@@ -50,5 +53,20 @@
             <ui:Button text="X" name="cancel_tasks" style="width: 10px; height: 10px;" />
         </ui:VisualElement>
         <ui:Label tabindex="-1" text="Status..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="status" style="-unity-text-align: middle-center; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; color: rgb(101, 100, 100);" />
+        <ui:VisualElement name="feedback_popup" style="position: absolute; width: 450px; background-color: rgb(40, 40, 40); border-radius: 5px; padding: 15px; display: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); z-index: 999; left: 50%; top: 50%; transform-origin: center; translate: -50% -50%;">
+            <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <ui:Label text="Please tell us more about the reason for your feedback" style="font-size: 14px; color: rgb(220, 220, 220); flex-grow: 1;" />
+                <ui:Button name="close_popup_button" text="✕" style="background-color: transparent; border-width: 0; font-size: 16px; padding: 2px 5px; margin: 0; color: rgb(220, 220, 220);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="margin-bottom: 15px;">
+                <ui:Toggle label="Not factually correct" name="feedback_option_1" style="margin-bottom: 5px;" />
+                <ui:Toggle label="Not helpful" name="feedback_option_2" style="margin-bottom: 5px;" />
+                <ui:Toggle label="Not following instructions" name="feedback_option_3" style="margin-bottom: 5px;" />
+                <ui:Toggle label="Harmful or offensive" name="feedback_option_4" style="margin-bottom: 5px;" />
+                <ui:Toggle label="Answer took too long" name="feedback_option_5" style="margin-bottom: 5px;" />
+            </ui:VisualElement>
+            <ui:TextField name="feedback_comment" multiline="true" placeholder-text="What&apos;s wrong? How can the response be improved?" style="height: 80px; margin-bottom: 15px; border-radius: 3px; background-color: rgb(60, 60, 60); color: rgb(220, 220, 220);" />
+            <ui:Button name="submit_feedback_button" text="Submit" style="align-self: flex-end; padding: 5px 15px; background-color: rgb(78, 78, 78); border-radius: 3px; color: rgb(220, 220, 220);" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
