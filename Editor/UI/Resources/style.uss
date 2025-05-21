@@ -351,3 +351,7 @@
 #feedback_popup .unity-toggle__input:checked .unity-toggle__label {
     color: rgb(220, 220, 220);
 }
+
+#feedback_comment > TextInput {
+    height: 100%;
+}
