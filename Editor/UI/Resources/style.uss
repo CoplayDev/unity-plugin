@@ -185,15 +185,6 @@
     color: rgb(94, 94, 94);
 }
 
-#settings {
-    color: rgb(108, 108, 108);
-}
-
-#settings:hover {
-    color: rgb(221, 221, 221);
-    cursor: Link;
-}
-
 #remove:hover {
     color: rgb(255, 255, 255);
 }
@@ -260,17 +251,6 @@
 
 #record:hover {
     color: rgb(202, 26, 26);
-    cursor: Link;
-}
-
-#new_task {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0);
-    cursor: Link;
-}
-
-#new_task:hover {
-    color: rgb(255, 255, 255);
     cursor: Link;
 }
 
@@ -354,4 +334,59 @@
 
 #feedback_comment > TextInput {
     height: 100%;
+}
+
+.toolbar {
+    height: 28px;
+    width: 35px;
+    -unity-text-align: middle-center;
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(115, 111, 111, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: Link;
+}
+
+.toolbar:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#history {
+    max-height: 200px;
+}
+
+.history_item {
+    padding: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.history_item:hover {
+    cursor: Link;
+    background-color: rgba(0, 170, 255, 0.5);
+}
+
+.current_thread {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.history_item:hover #thread_label {
+    cursor: Link;
+}
+
+.history_item:hover #thread_created_at {
+    cursor: Link;
 }
