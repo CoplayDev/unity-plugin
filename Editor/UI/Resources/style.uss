@@ -183,6 +183,42 @@
 
 #submit {
     color: rgb(94, 94, 94);
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    -unity-font-definition: initial;
+    font-size: 24px;
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+}
+
+.toolbar {
+    height: 28px;
+    width: 35px;
+    -unity-text-align: middle-center;
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    -unity-font-definition: initial;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(115, 111, 111, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: Link;
+}
+
+.toolbar:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: Link;
 }
 
 #remove:hover {
@@ -247,6 +283,14 @@
 #record {
     color: rgba(202, 26, 26, 0.3);
     cursor: Link;
+    background-color: rgba(188, 188, 188, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-font-definition: initial;
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    font-size: 16px;
 }
 
 #record:hover {
@@ -334,32 +378,6 @@
 
 #feedback_comment > TextInput {
     height: 100%;
-}
-
-.toolbar {
-    height: 28px;
-    width: 35px;
-    -unity-text-align: middle-center;
-    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-color: rgba(115, 111, 111, 0);
-    border-left-color: rgba(149, 149, 149, 0);
-    border-right-color: rgba(149, 149, 149, 0);
-    border-top-color: rgba(149, 149, 149, 0);
-    border-bottom-color: rgba(149, 149, 149, 0);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0);
-    cursor: Link;
-}
-
-.toolbar:hover {
-    color: rgba(255, 255, 255, 0.5);
 }
 
 #history {
