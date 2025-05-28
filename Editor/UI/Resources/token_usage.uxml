@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="token_usage_container" style="margin-top: 15px; margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px; border-top-width: 1px; border-top-color: rgb(77, 77, 77);">
+        <ui:Label text="Token Credits" name="token_usage_label" style="font-size: 14px; -unity-font-style: bold;" />
+        <ui:Label name="token_usage_field" style="margin-top: 5px;" />
+    </ui:VisualElement>
+</ui:UXML>
