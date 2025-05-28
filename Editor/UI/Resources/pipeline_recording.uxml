@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="style.uss" />
+    <ui:VisualElement style="flex-grow: 1; width: 100%;">
+        <ui:Label text="Pipeline Recording Mode" style="margin-right: 20px; font-size: 14px; -unity-font-style: bold; align-self: flex-start; margin-left: 10px;" />
+        
+        <ui:VisualElement style="flex-direction: row; align-items: center; justify-content: flex-start; margin-bottom: 10px; margin-top: 5px; margin-left: 10px;">
+            <ui:Button text="Start Recording Actions" name="recording_toggle_button" />
+            <uie:ToolbarMenu text="Recordings" name="recording_selection" enable-rich-text="true" />
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="action_records_container" style="margin-top: 0px; align-items: flex-start; align-self: flex-start; margin-left: 10px; padding-left: 5px; width: 100%;">
+            <ui:Label text="Recorded actions:" style="margin-top: 0px; margin-bottom: 5px; margin-left: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
