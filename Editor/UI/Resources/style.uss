@@ -134,6 +134,8 @@
     -unity-text-align: middle-center;
     max-width: 200px;
     min-width: 20px;
+    color: rgb(220, 220, 220);
+    -unity-font-style: bold;
 }
 
 .settings-buttons {
