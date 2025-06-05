@@ -46,7 +46,10 @@
         <ui:VisualElement name="selected_context" style="flex-grow: 0; flex-shrink: 0; flex-wrap: wrap; flex-direction: row; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;" />
         <ui:VisualElement name="VisualElement" style="flex-grow: 0; flex-direction: row; flex-shrink: 0;">
             <ui:VisualElement name="input_group" style="flex-grow: 1; flex-direction: row;">
-                <ui:TextField name="chat_input" select-word-by-double-click="false" placeholder-text="What can I help with?" multiline="true" vertical-scroller-visibility="auto" style="color: rgb(255, 255, 255); width: auto; max-height: 200px; height: 100%; overflow: scroll; flex-grow: 1; flex-shrink: 1;" />
+                <ui:VisualElement name="chat_box" style="flex-grow: 1;">
+                    <ui:ScrollView name="suggestions" />
+                    <ui:TextField name="chat_input" select-word-by-double-click="false" placeholder-text="What can I help with?" multiline="true" vertical-scroller-visibility="auto" select-all-on-focus="false" style="color: rgb(255, 255, 255); width: auto; max-height: 200px; height: 100%; overflow: scroll; flex-grow: 1; flex-shrink: 1;" />
+                </ui:VisualElement>
                 <ui:DropdownField name="iterations" choices="1,2,3,4,5" />
                 <ui:Button text="\uf138" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="submit" />
             </ui:VisualElement>
@@ -59,8 +62,8 @@
                 <ui:Label text="Auto-approve" display-tooltip-when-elided="true" style="-unity-font-style: normal; font-size: 12px;" />
             </ui:VisualElement>
             <ui:VisualElement style="flex-grow: 1;" />
-            <ui:DropdownField index="2" choices="System.Collections.Generic.List`1[System.String]" name="mode" style="height: 30px; margin: 2px; min-width: 120px;" />
-            <ui:DropdownField index="2" name="model" style="height: 30px; margin: 2px; min-width: 120px;" />
+            <ui:DropdownField index="2" choices="System.Collections.Generic.List`1[System.String]" name="mode" style="height: 30px; margin: 2px;" />
+            <ui:DropdownField index="2" name="model" style="height: 30px; margin: 2px;" />
         </ui:VisualElement>
         <!-- Progress Bar -->
         <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; flex-direction: row; align-items: center;">

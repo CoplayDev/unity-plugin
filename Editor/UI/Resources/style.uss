@@ -370,7 +370,7 @@
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    border-width: 1;
+    border-width: 1px;
     position: absolute;
     bottom: 25px;
     justify-content: center;
@@ -521,7 +521,7 @@
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     margin: 0;
-    cursor: default;
+    cursor: arrow;
     padding-right: 3px;
 }
 
@@ -557,43 +557,31 @@
 
 .action-record-item.dragging {
     background-color: rgba(70, 120, 200, 0.3);
-    border: 1px solid rgba(70, 120, 200, 0.8);
+    border-width: 1px;
+    border-color: rgba(70, 120, 200, 0.8);
 }
 
 .action-record-item.drop-target {
-    border-top: 4px solid rgba(69, 120, 200, 1.0);
+    border-top-width: 4px;
+    border-top-color: rgba(69, 120, 200, 1.0);
     background-color: rgba(69, 120, 200, 0.15);
     border-radius: 4px;
     margin-top: 6px;
     margin-bottom: 2px;
-    transform: scale(1.02);
-    transition: all 0.15s ease;
+    scale: 1.02;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
 }
 
 .drop-insertion-indicator {
     position: absolute;
-    width: 100%;
+    width: 20px;
     height: 4px;
     background-color: rgba(69, 120, 200, 1.0);
     border-radius: 2px;
-    box-shadow: 0 0 8px rgba(69, 120, 200, 0.6);
-    pointer-events: none;
-    z-index: 1000;
 }
 
-.drop-insertion-indicator::before {
-    content: '';
-    position: absolute;
-    left: -6px;
-    top: -4px;
-    width: 12px;
-    height: 12px;
-    background-color: rgba(69, 120, 200, 1.0);
-    border-radius: 50%;
-    box-shadow: 0 0 6px rgba(69, 120, 200, 0.8);
-}
-
-.action-record-button {
+.action-record-button { 
     width: 20px;
     height: 20px;
     margin-right: 3px;
@@ -616,7 +604,6 @@
     border-width: 0;
     border-radius: 2px;
     color: rgb(180, 180, 180);
-    cursor: ns-resize;
 }
 
 .drag-handle:hover {
@@ -634,8 +621,6 @@
     border-radius: 6px;
     padding: 4px 8px;
     opacity: 0.9;
-    pointer-events: none;
-    z-index: 9999;
 }
 
 .drag-ghost-text {
@@ -682,4 +667,71 @@
 
 .history_item:hover #thread_created_at {
     cursor: Link;
+}
+
+.code-block {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -unity-font-definition: resource("Fonts/RobotoMono-Regular");
+    -unity-font-initial: resource("Fonts/RobotoMono-Regular");
+}
+
+#suggestions {
+    top: 0;
+    left: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    max-height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.suggestion {
+    padding: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.suggestion:hover {
+    cursor: Link;
+}
+
+.suggestion-selected {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Screenshot Preview Styles */
+.screenshot-preview-container {
+    flex-grow: 1;
+    margin-top: 5px;
+    display: none;
+    flex-direction: column;
+}
+
+.screenshot-item {
+    margin-bottom: 5px;
+    border-width: 1px;
+    border-color: rgba(77, 77, 77, 1);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(45, 45, 45, 0.8);
+}
+
+.screenshot-label {
+    font-size: 12px;
+    color: rgba(180, 180, 180, 1);
+    margin-bottom: 3px;
+}
+
+.screenshot-image {
+    width: 300px;
+    max-width: 300px;
+    height: 200px;
+    max-height: 200px;
+    border-radius: 3px;
+    background-color: rgba(60, 60, 60, 0.5);
 }
