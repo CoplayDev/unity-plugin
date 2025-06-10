@@ -25,13 +25,13 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:ScrollView name="history" style="display: none;" />
-        <ui:VisualElement name="settings_panel" style="flex-grow: 0; display: none; flex-shrink: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
-        <ui:VisualElement name="metrics_panel" style="flex-grow: 0; display: none; flex-shrink: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
-        <ui:VisualElement name="pipeline_recording_panel" style="flex-grow: 0; display: none; flex-shrink: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; flex-direction: row; background-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-color: rgb(77, 77, 77);" />
-        <ui:ScrollView name="messages" view-data-key="l" style="height: auto; flex-grow: 1; flex-shrink: 1; min-height: 50px; background-image: resource(&apos;full_logo&apos;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(255, 255, 255, 0.25);">
+        <ui:VisualElement name="settings_panel" />
+        <ui:VisualElement name="metrics_panel" />
+        <ui:VisualElement name="pipeline_recording_panel" />
+        <ui:ScrollView name="messages" view-data-key="l">
             <ui:VisualElement name="chat" style="flex-grow: 0; flex-shrink: 0;" />
-            <ui:VisualElement name="thinking" style="flex-grow: 0; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; flex-shrink: 0; display: flex; flex-direction: row; align-items: center;">
-                <ui:Label text="Coplay is thinking" name="thinking_label" style="color: rgb(230, 230, 230);" />
+            <ui:VisualElement name="thinking" style="flex-grow: 0; padding: 10px; flex-shrink: 0; display: flex; flex-direction: row; align-items: center;">
+                <ui:Label text="Coplay is thinking" name="thinking_label" />
             </ui:VisualElement>
             <ui:VisualElement name="functions" style="flex-grow: 0; flex-shrink: 0;" />
         </ui:ScrollView>
@@ -74,10 +74,10 @@
         <ui:Label tabindex="-1" text="Status..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="status" style="-unity-text-align: middle-center; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; color: rgb(101, 100, 100);" />
 
         <!-- Feedback Popup -->
-        <ui:VisualElement name="feedback_popup" style="position: absolute; width: 450px; background-color: rgb(40, 40, 40); border-radius: 5px; padding: 15px; display: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); z-index: 999; left: 50%; top: 50%; transform-origin: center; translate: -50% -50%;">
+        <ui:VisualElement name="feedback_popup" style="position: absolute; width: 450px; border-radius: 5px; padding: 15px; display: none; left: 50%; top: 50%; transform-origin: center; translate: -50% -50%;">
             <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <ui:Label text="Please tell us more about the reason for your feedback" style="font-size: 14px; color: rgb(220, 220, 220); flex-grow: 1;" />
-                <ui:Button name="close_popup_button" text="✕" style="background-color: transparent; border-width: 0; font-size: 16px; padding: 2px 5px; margin: 0; color: rgb(220, 220, 220);" />
+                <ui:Label text="Please tell us more about the reason for your feedback" style="font-size: 14px; flex-grow: 1;" />
+                <ui:Button name="close_popup_button" text="✕" style="background-color: transparent; border-width: 0; font-size: 16px; padding: 2px 5px; margin: 0;" />
             </ui:VisualElement>
             <ui:VisualElement style="margin-bottom: 15px;">
                 <ui:Toggle label="Not factually correct" name="feedback_option_1" style="margin-bottom: 5px;" />
@@ -87,7 +87,7 @@
                 <ui:Toggle label="Answer took too long" name="feedback_option_5" style="margin-bottom: 5px;" />
             </ui:VisualElement>
             <ui:TextField name="feedback_comment" multiline="true" placeholder-text="What&apos;s wrong? How can the response be improved?" style="height: 80px; margin-bottom: 15px; border-radius: 3px; background-color: rgb(60, 60, 60); color: rgb(220, 220, 220);" />
-            <ui:Button name="submit_feedback_button" text="Submit" style="align-self: flex-end; padding: 5px 15px; background-color: rgb(78, 78, 78); border-radius: 3px; color: rgb(220, 220, 220);" />
+            <ui:Button name="submit_feedback_button" text="Submit" style="align-self: flex-end; padding: 5px 15px; border-radius: 3px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
