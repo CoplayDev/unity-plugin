@@ -1,0 +1,254 @@
+#chat_message #unity-text-input {
+    background-color: rgba(240, 240, 240, 0.65);
+}
+
+#chat_message_container {
+    background-color: rgb(230, 230, 230);
+}
+
+#settings_bar {
+    background-color: rgb(204, 204, 204);
+}
+
+.thread-name {
+    color: rgb(51, 51, 51);
+}
+
+.toolbar {
+    color: rgb(85, 85, 85);
+}
+
+.toolbar:hover {
+    color: rgb(240, 240, 240);
+}
+
+.toolbar:disabled {
+    color: rgb(85, 85, 85);
+}
+
+.history_item #thread_created_at {
+    color: rgb(120, 120, 120);
+}
+
+#submit {
+    color: rgb(85, 85, 85);
+}
+
+#submit:hover {
+    color: rgb(240, 240, 240);
+}
+
+#messages {
+    background-color: rgb(204, 204, 204);
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.15);
+}
+
+#add_attachment:hover {
+    background-color: rgba(108, 108, 108, 0.55);
+}
+
+#action_records_container {
+    background-color: rgb(204, 204, 204);
+}
+
+.action-record-item {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+.action-record-item.dragging {
+    background-color: rgba(70, 120, 200, 0.2);
+}
+
+.action-record-button { 
+    background-color: rgba(200, 200, 200, 0.8);
+    color: rgb(51, 51, 51);
+}
+
+.action-record-button:hover {
+    background-color: rgba(180, 180, 180, 0.9);
+    color: rgb(0, 0, 0);
+}
+
+.drag-handle {
+    background-color: rgba(200, 200, 200, 0.8);
+    color: rgb(100, 100, 100);
+}
+
+.drag-handle:hover {
+    background-color: rgba(180, 180, 180, 0.9);
+    color: rgb(51, 51, 51);
+}
+
+.action-record-text {
+    color: rgb(51, 51, 51);
+}
+
+.history_item:hover {
+    background-color: rgba(0, 170, 255, 0.2);
+}
+
+.current_thread {
+    background-color: rgb(180, 180, 180);
+}
+
+#function_calls {
+    background-color: rgb(220, 220, 220);
+}
+
+.function-call-label {
+    color: rgb(51, 51, 51);
+}
+
+.file-path-label {
+    color: rgb(51, 51, 51);
+}
+
+#suggestions {
+    background-color: rgba(240, 240, 240, 0.95);
+}
+
+.suggestion-selected {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.screenshot-item {
+    border-color: rgba(180, 180, 180, 1);
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+.screenshot-label {
+    color: rgba(80, 80, 80, 1);
+}
+
+.screenshot-image {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+/* Feedback popup styles */
+#feedback_buttons Button {
+    color: rgb(51, 51, 51);
+}
+
+#feedback_popup {
+    background-color: rgb(220, 220, 220);
+}
+
+#feedback_popup .unity-toggle__input {
+    background-color: rgba(220, 220, 220, 0.5);
+    border-color: rgba(180, 180, 180, 0.5);
+}
+
+#feedback_popup .unity-toggle__input:hover {
+    background-color: rgba(200, 200, 200, 0.7);
+    border-color: rgba(160, 160, 160, 0.7);
+}
+
+#feedback_popup .unity-toggle__input:checked {
+    background-color: rgba(78, 156, 234, 0.2);
+}
+
+#feedback_popup .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+/* #feedback_popup .unity-toggle__input:checked .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(78, 156, 234);
+} */
+
+#feedback_popup .unity-toggle__label {
+    color: rgb(51, 51, 51);
+}
+
+/* Text Edit Dialog Styles */
+.text-edit-dialog-box {
+    background-color: rgb(240, 240, 240);
+}
+
+.text-edit-dialog-field {
+    border-color: rgb(180, 180, 180);
+}
+
+/* Code Editor Styles */
+.code-editor .line-numbers TextInput {
+    background-color: rgb(220, 220, 220);
+}
+
+.code-editor .line-numbers:hover {
+    border-color: rgb(160, 160, 160);
+}
+
+/* Function Queue Styles */
+#function_queue {
+    background-color: rgb(220, 220, 220);
+}
+
+/* Panel Styles */
+#settings_panel {
+    flex-grow: 0;
+    display: none;
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+#metrics_panel {
+    flex-grow: 0;
+    display: none;
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+#pipeline_recording_panel {
+    flex-grow: 0;
+    display: none;
+    flex-shrink: 0;
+    padding: 5px;
+    flex-direction: row;
+    background-color: rgb(220, 220, 220);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(180, 180, 180);
+}
+
+/* Messages and Thinking Styles */
+#messages {
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 50px;
+    background-image: resource('full_logo');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.15);
+}
+
+#thinking_label {
+    color: rgb(51, 51, 51);
+}
+
+#save_recording_dialog .dialog-box {
+    background-color: rgb(220, 220, 220);
+}
+
+#save_recording_dialog .dialog-title {
+    color: rgb(51, 51, 51);
+}
+
+#save_recording_dialog .dialog-message {
+    color: rgb(51, 51, 51);
+}
+
+#save_recording_dialog .name-field {
+    background-color: rgb(220, 220, 220);
+    color: rgb(51, 51, 51);
+}
+
+#save_recording_dialog .name-field:focus {
+    border-color: rgb(78, 156, 234);
+}
+
+#save_recording_dialog .button-container Button {
+    background-color: rgb(220, 220, 220);
+    color: rgb(51, 51, 51);
+}
+
+#save_recording_dialog .button-container Button:hover {
+    background-color: rgb(200, 200, 200);
+} 

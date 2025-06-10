@@ -1,0 +1,360 @@
+#chat_message #unity-text-input {
+    -unity-background-image-tint-color: rgba(250, 0, 0, 0);
+    background-color: rgba(91, 91, 91, 0.65);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+#chat_message_container {
+    background-color: rgb(56, 56, 56);
+}
+
+#content TextElement {
+    background-color: rgba(183, 41, 41, 0);
+    color: rgb(255, 255, 255);
+}
+
+#content TextElement:hover {
+    background-color: rgba(144, 144, 144, 0);
+}
+
+#content #unity-text-input {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-progress-bar__progress {
+    background-color: rgb(51, 153, 255);
+}
+
+.unity-progress-bar__title-container {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#model .unity-base-field__input {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#mode .unity-base-field__input {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.thread-name {
+    color: rgb(220, 220, 220);
+}
+
+.update-button {
+    background-color: rgb(76, 175, 80);
+    color: rgb(255, 255, 255);
+}
+
+#settings_bar {
+    background-color: rgb(32, 32, 32);
+}
+
+#messages {
+    background-color: rgb(32, 32, 32);
+}
+
+#pending_message {
+    color: rgb(90, 90, 90);
+}
+
+#pending_message Button {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(90, 90, 90);
+}
+
+#pending_message Button:hover {
+    color: rgb(255, 255, 255);
+}
+
+#action_records_container {
+    background-color: rgb(32, 32, 32);
+}
+
+#reset:hover {
+    background-color: rgb(103, 103, 103);
+}
+
+#submit:hover {
+    color: rgb(221, 221, 221);
+}
+
+#submit {
+    color: rgb(94, 94, 94);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+}
+
+.toolbar {
+    border-color: rgba(149, 149, 149, 0);
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.toolbar:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.toolbar:disabled {
+    color: rgb(85, 85, 85);
+}
+
+#remove:hover {
+    color: rgb(255, 255, 255);
+}
+
+#remove {
+    color: rgb(156, 156, 156);
+}
+
+#add_attachment {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#add_attachment:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#context_selection {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#context_selection:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#recording_selection {
+    background-color: rgba(47, 47, 47, 0.84);
+}
+
+#recording_selection:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#new_task {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#new_task:hover {
+    color: rgb(255, 255, 255);
+}
+
+#style_dropdown {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#style_dropdown:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#cancel_thinking {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#cancel_thinking:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Feedback toggle styling */
+#feedback_buttons Button {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#feedback_buttons Button:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#feedback_popup {
+    background-color: rgb(32, 32, 32);
+}
+
+#feedback_popup .unity-toggle__input {
+    background-color: rgba(60, 60, 60, 0.5);
+    border-color: rgba(100, 100, 100, 0.5);
+}
+
+#feedback_popup .unity-toggle__input:hover {
+    background-color: rgba(70, 70, 70, 0.7);
+    border-color: rgba(120, 120, 120, 0.7);
+}
+
+#feedback_popup .unity-toggle__input:checked {
+    background-color: rgba(78, 156, 234, 0.3);
+}
+
+#feedback_popup .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(220, 220, 220);
+}
+
+#feedback_popup .unity-toggle__input:checked .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(120, 180, 240);
+}
+
+#feedback_popup .unity-toggle__label {
+    color: rgb(220, 220, 220);
+}
+
+#feedback_popup .unity-toggle__input:checked .unity-toggle__label {
+    color: rgb(220, 220, 220);
+}
+
+/* Text Edit Dialog Styles */
+.text-edit-dialog {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-edit-dialog-box {
+    background-color: rgb(56, 56, 56);
+}
+
+.text-edit-dialog-field {
+    border-color: rgb(77, 77, 77);
+}
+
+.text-edit-dialog-container.invalid {
+    border-color: rgb(255, 0, 0);
+}
+
+/* Code Editor Styles */
+.code-editor .line-numbers TextInput {
+    background-color: rgb(70, 70, 70);
+}
+
+.code-editor .line-numbers:hover {
+    border-color: rgb(100, 100, 100);
+}
+
+/* Action record styling */
+.action-record-item {
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.action-record-item.dragging {
+    background-color: rgba(70, 120, 200, 0.3);
+    border-color: rgba(70, 120, 200, 0.8);
+}
+
+.action-record-item.drop-target {
+    border-top-color: rgba(69, 120, 200, 1.0);
+    background-color: rgba(69, 120, 200, 0.15);
+}
+
+.drop-insertion-indicator {
+    background-color: rgba(69, 120, 200, 1.0);
+}
+
+.action-record-button { 
+    background-color: rgba(70, 70, 70, 0.8);
+    color: rgb(200, 200, 200);
+}
+
+.action-record-button:hover {
+    background-color: rgba(90, 90, 90, 0.9);
+    color: rgb(255, 255, 255);
+}
+
+.drag-handle {
+    background-color: rgba(60, 60, 60, 0.8);
+    color: rgb(180, 180, 180);
+}
+
+.drag-handle:hover {
+    background-color: rgba(80, 80, 80, 0.9);
+    color: rgb(220, 220, 220);
+}
+
+.drag-ghost {
+    background-color: rgba(69, 120, 200, 0.95);
+    border-color: rgba(102, 153, 230, 1.0);
+}
+
+.drag-ghost-text {
+    color: rgb(255, 255, 255);
+}
+
+.action-record-text {
+    color: rgb(220, 220, 220);
+}
+
+.history_item:hover {
+    background-color: rgba(0, 170, 255, 0.5);
+}
+
+.current_thread {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.history_item #thread_created_at {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.function-call-label {
+    color: rgb(255, 255, 255);
+}
+
+.file-path-label {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#suggestions {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.suggestion-selected {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Screenshot Preview Styles */
+.screenshot-item {
+    border-color: rgba(77, 77, 77, 1);
+    background-color: rgba(45, 45, 45, 0.8);
+}
+
+.screenshot-label {
+    color: rgba(180, 180, 180, 1);
+}
+
+.screenshot-image {
+    background-color: rgba(60, 60, 60, 0.5);
+}
+
+/* Function Queue Styles */
+#function_queue {
+    background-color: rgb(60, 60, 60);
+}
+
+#function_calls {
+    background-color: rgb(32, 32, 32);
+}
+
+/* Panel Styles */
+#pipeline_recording_panel {
+    background-color: rgb(51, 51, 51);
+    border-bottom-color: rgb(77, 77, 77);
+}
+
+/* Messages and Thinking Styles */
+#messages {
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.25);
+}
+
+#thinking_label {
+    color: rgb(230, 230, 230);
+}
+
+/* Save Recording Dialog Styles */
+#save_recording_dialog {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#save_recording_dialog .dialog-box {
+    background-color: rgb(56, 56, 56);
+} 
