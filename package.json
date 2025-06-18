@@ -1,7 +1,7 @@
 {
   "name": "com.coplaydev.coplay",
   "displayName": "Coplay",
-  "version": "3.2.4",
+  "version": "4.0.0",
   "unity": "2021.3",
   "description": "Copilot for game development",
   "dependencies": {
