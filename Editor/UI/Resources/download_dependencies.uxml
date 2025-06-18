@@ -1,0 +1,11 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="style.uss" />
+    <engine:VisualElement class="screen-root">
+        <engine:VisualElement name="logo" class="full-logo" />
+        <engine:VisualElement name="spacer" class="spacer-flex" />
+        <engine:Label text="Coplay needs to download required dependencies before use." class="body-label" />
+        <engine:Label name="status_label" text="Ready to download" class="status-label" />
+        <engine:Button text="Download Dependencies" name="download_deps_btn" class="primary-button" />
+        <engine:Label name="error_label" class="error-label" />
+    </engine:VisualElement>
+</engine:UXML>
