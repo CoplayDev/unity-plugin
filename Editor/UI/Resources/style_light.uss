@@ -251,4 +251,4 @@
 
 #save_recording_dialog .button-container Button:hover {
     background-color: rgb(200, 200, 200);
-} 
+}
