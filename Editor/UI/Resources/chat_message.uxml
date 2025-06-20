@@ -3,12 +3,10 @@
         <ui:Label parse-escape-sequences="true" name="avatar" style="background-image: resource('logo'); width: 20px; height: 20px; -unity-text-align: upper-left; margin-right: 10px; align-self: flex-start;" />
         <ui:VisualElement style="flex-grow: 1;">
             <ui:TextField name="content" select-all-on-focus="false" vertical-scroller-visibility="Auto" multiline="true" select-all-on-mouse-up="false" readonly="true" style="-unity-background-image-tint-color: rgba(248, 0, 0, 0); color: rgb(171, 93, 93); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: auto; width: 100%; align-items: flex-start; max-width: 100%; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; white-space: normal; max-height: 500px; margin-left: 0; margin-top: 0; margin-right: 0;" />
-            <ui:VisualElement name="ui_message" style="flex-grow: 1;" />
             <ui:VisualElement name="function_calls" style="display: none;" />
-            <ui:VisualElement name="screenshot_preview" class="screenshot-preview-container">
-                <ui:VisualElement name="screenshot_item" class="screenshot-item">
-                    <ui:Label name="screenshot_label" text="Screenshot:" class="screenshot-label" />
-                    <ui:VisualElement name="screenshot_image" class="screenshot-image" />
+            <ui:VisualElement name="image_preview" class="image-preview-container">
+                <ui:VisualElement name="image_item" class="image-item">
+                    <ui:VisualElement name="image_image" class="image-image" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="feedback_buttons" style="flex-direction: row; justify-content: flex-end; margin-top: 5px; display: none;">

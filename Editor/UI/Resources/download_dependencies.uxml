@@ -1,14 +1,11 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="style.uss" />
-    <engine:VisualElement style="flex-grow: 1; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; height: 100%; align-items: center;">
-        <engine:VisualElement name="logo" style="flex-grow: 1; background-image: resource('full_logo'); -unity-background-scale-mode: scale-to-fit; align-items: center; width: 80%; align-self: center; min-height: 50px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; height: 0;" />
-        <engine:VisualElement name="spacer" style="flex-grow: 1; flex-shrink: 0;" />
-        <engine:VisualElement style="flex-grow: 0; align-items: center; justify-content: center; width: 100%;">
-            <engine:Label text="Coplay needs to download required dependencies before use." style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; -unity-text-align: upper-center; white-space: normal;" />
-            <engine:Label name="status_label" text="Ready to download" style="padding: 10px; -unity-text-align: upper-center; white-space: normal; -unity-font-style: bold; font-size: 16px;" />
-            <engine:Button text="Download Dependencies" name="download_deps_btn" style="margin-top: 15px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; width: 80%; height: 30px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;" />
-            <engine:Label name="error_label" style="-unity-text-align: upper-center; white-space: normal; color: rgb(255, 85, 85); padding: 5px; display: none;" />
-        </engine:VisualElement>
-        <engine:VisualElement style="flex-grow: 1; flex-shrink: 0;" />
+    <engine:VisualElement class="screen-root">
+        <engine:VisualElement name="logo" class="full-logo" />
+        <engine:VisualElement name="spacer" class="spacer-flex" />
+        <engine:Label text="Coplay needs to download required dependencies before use." class="body-label" />
+        <engine:Label name="status_label" text="Ready to download" class="status-label" />
+        <engine:Button text="Download Dependencies" name="download_deps_btn" class="primary-button" />
+        <engine:Label name="error_label" class="error-label" />
     </engine:VisualElement>
 </engine:UXML>
