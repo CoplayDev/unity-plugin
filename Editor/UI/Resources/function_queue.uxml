@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="style.uss" />
+    <ui:VisualElement style="flex-grow: 1; padding: 10px;">
+        <ui:VisualElement name="function_queue" />
+    </ui:VisualElement>
+</ui:UXML>
