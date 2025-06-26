@@ -1,4 +1,12 @@
-# Coplay
+<h2 align="center">
+<a href="https://coplay.dev/"> <img width="50%" src="https://github.com/CoplayDev/coplay-unity-plugin/blob/beta/coplay-logo.png?raw=true)" /></a>
+</h2>
+
+<p align="center">
+<a href="https://discord.gg/y4p8KfzrN4" target="_blank">
+    <img src="https://img.shields.io/badge/discord-join-blue.svg?logo=discord&logoColor=white" alt="Discord">
+</a>
+</p>
 
 Coplay is an AI Copilot for Unity. It provides a natural language interface that allows you to control Unity for executing actions and automate repetitive, tedious tasks.
 
@@ -16,6 +24,22 @@ Find our docs on how to use Coplay here: <https://docs.coplay.dev>
 
 ## Installation
 
-- Coplay can be installed via the Asset Store or via GitHub URL.
+#### Unity 2022 or newer
+
+1. Open Package Manager window (Window | Package Manager)
+1. Click `+` button on the upper-left of a window, and select "Add package from git URL..."
+1. Enter the following URL and click `Add` button
+
+```
+https://github.com/CoplayDev/unity-plugin.git#beta
+```
+
+#### Unity 2021
+
+Use this URL for step 3:
+```
+https://github.com/CoplayDev/unity-plugin.git#beta-unity-2021
+```
+
 - Once imported to your project, open Coplay from the window menu (Coplay -> Toggle Window) or use the keyboard shortcut `Ctrl+G` on Windows and Linux or `Cmd+G` on macOS.
 - When you open the window, you need to login or create an account. Clicking on the "Login" button will open a new browser window to sign in.
